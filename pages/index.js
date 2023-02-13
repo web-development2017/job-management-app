@@ -8,6 +8,7 @@ import useAuth from '../src/hooks/AuthProvider';
 
 export default function Home() {
   const {login, logout, user } = useAuth();
+  console.log("updated npm dependencies")
 
   return user === null ?(
     <div className={styles.container}>
