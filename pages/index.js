@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import CollapsibleNavbar from '../components/Navbar';
 
 import useAuth from '../src/hooks/AuthProvider';
+import Link from 'next/link';
 
 export default function Home() {
   const {login, logout, user } = useAuth();
@@ -25,8 +26,8 @@ export default function Home() {
         <Button onClick={ login } variant="primary">Sign In</Button>{' '}
         <p className={styles.description}>
           Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
         </p>
+        <Link href="work_locations">Work Locations</Link>
 
         {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
